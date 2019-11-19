@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic");
+
+body,
+html {
+  height: 100%;
+  background: linear-gradient(#ffedfd, #e2f5ff, #ffedfd);
+  background-repeat: none;
+  z-index: 0;
+}
+/* IMPORTING PLAYLIST FONTS */
+@font-face {
+  font-family: "playlistornament";
+  src: url("https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fplaylist_ornament%5B1%5D.woff2?v=1571188102319")
+      format("woff2"),
+    url("https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fplaylist_ornament%5B1%5D.woff?v=1571188092328")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-color: #8b2455;
+}
+
+@font-face {
+  font-family: "playlistscript";
+  src: url("https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fplaylist_script%5B1%5D.woff2?v=1571188134732")
+      format("woff2"),
+    url("https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fplaylist_script%5B1%5D.woff?v=1571188119653")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-color: #8b2455;
+}
+
+@font-face {
+  font-family: "playlistcaps";
+  src: url("https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fwebfontkit-20191015-204000.zip?v=1571186410003")
+      format("woff2"),
+    url("https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fplaylist_caps%5B1%5D.woff?v=1571188000092")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-color: #8b2455;
+}
+
+/* START EVERY WEBSITE WITH THIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+/* TEXT */
+@media screen and (max-width: 600px) {
+  .sectionheader {
+    font-size: 10%;
+  }
+}
+
+/* NAVIGATION BAR */
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(255, 255, 255, 0);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  margin: .25%;
+  padding: 20px 18px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  text-shadow: 2px 2px 5px black;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* ACTUAL HEADER */
+.sectionheader {
+  font-family: "playlistscript";
+  color: #8b2455;
+  letter-spacing: 1px;
+  transform: translate(0, 40%);
+}
+
+#title {
+  font-family: "playlistscript";
+  font-size: 700%;
+  letter-spacing: 4px;
+}
+.parallax {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2F_DSC9203%20(1).jpg?v=1571377152465");
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-image {
+  padding: 22%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2F_DSC9203%20(1).jpg?v=1571377152465");
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d83a85;
+}
+
+.hero-text1 {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: white;
+}
+
+.hero-text button:hover {
+  background-color: #8b2455;
+  color: white;
+}
+.titlesubtitle {
+  font-size: 150%;
+  letter-spacing: 1px;
+}
+
+.titlesubtitle1 {
+  font-size: 200%;
+  letter-spacing: 2px;
+  color: white;
+  transform: translate(0, -50%)
+}
+.titlesubtitle: hover {
+    text-shadow: 2px 2px 5px white;
+}
+
+/* HEADER */
+.header {
+  margin-top: 2%;
+  display: flex;
+}
+.logo {
+  margin: 7.5%;
+}
+.headertext {
+  font-size: 180%;
+  margin-top: 9%;
+  justify-content: right;
+}
+#subtitle {
+  margin: 2%;
+}
+.sectionheader {
+  font-size: 400%;
+  margin: 4.5%;
+}
+
+.sectiontext {
+  font-size: 130%;
+  margin: 5%;
+  line-height: 1.5;
+}
+
+/* IMPACT COUNTER */
+#pinkbg {
+  background-color: rgba(255, 194, 211, 0.5);
+  padding: 1%;
+  opacity: 1;
+}
+#pinkbg4 {
+  background-color: rgba(255, 194, 211, 0.5);
+  padding: 3%;
+}
+.numbers {
+  font-size: 270%;
+  display: inline-block;
+  margin: 5%;
+}
+.numbersubtitle {
+  display: inline-block;
+}
+
+/* BUTTONS */
+.button {
+  background-color: #f794b8;
+  border: none;
+  color: black;
+  padding: 17px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 5px;
+  cursor: pointer;
+  opacity: .9;
+  border-radius: 5px;
+  transform: translate(0, -50%);
+}
+
+/* WHAT IS SUPERPOSITION SECTION */
+.some-page-wrapper {
+  margin: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+/* WHAT TO EXPECT  */
+.whattoexpect {
+  display: flex;
+}
+
+.expect {
+  margin: 1%;
+  width: 32%;
+  height: auto;
+  /*   padding: 1%; */
+}
+
+/* FAQS */
+
+.faqs {
+  margin: 3%;
+}
+.faqstext {
+  padding: 1%;
+}
+.accordion {
+  opacity: .6;
+  border-radius: 5px;
+  background-color: white;
+  color: #8b2455;
+  cursor: pointer;
+  padding: 18px;
+  width: 95%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 130%;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ffc3d4;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #000000;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  margin: 1%;
+  margin-left: 2.5%;
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 95%;
+}
+
+/* FOOTER */
+.footer {
+  padding: 1%;
+  background-color: transparent;
+  text-align: center;
+}
+
+a {
+    color: #8b2455;
+    text-decoration: none;
+}
+#copyright {
+  font-weight: 400;
+  font-size: 80%;
+  margin: 1%;
+}
+.footerpages {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin: 1%;
+}
+.socialmediafooter {
+  display: inline-block;
+  width: 2.5%;
+  height: 2.5%;
+  margin: 1%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 1%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2 {
+    width: 100%;
+  }
+}
+
+/* TEAM */
+.circle {
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  transition: 0.3s;
+  /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+}
+
+.circle:hover {
+  transform: scale(1.1);
+}
+
+.teamsocials {
+  display: inline-block;
+  width: 7%;
+  height: 7%;
+  margin: 1%;
+}
+.teamnames {
+  margin-top: 5%;
+  color: #000000;
+}
+.teamdescriptions {
+  margin: 2.5%;
+  color: #000000;
+}
+
+/* SCHEDULE */
+.schedule {
+  -webkit-column-count: 0; /* Chrome, Safari, Opera */
+  -moz-column-count: 0; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;
+  firefox*/column-gap: 40px;
+  -webkit-column-rule: 7px double #8b2455; /* Chrome, Safari, Opera */
+  -moz-column-rule: 7px solid #8b2455; /* Firefox */
+  column-rule: 7px solid #8b2455;
+}
+.row3 {
+  margin-left: 10%;
+  /*   display: flex; */
+}
+.column3 {
+  /*   flex: 50%;
+  justify-content: center;
+  align-items: center; */
+}
+
+.schedtitles {
+  margin: 1%;
+  margin-bottom: 3%;
+  color: #8b2455;
+  font-size: 200%;
+}
+
+.scheddescriptions {
+  margin: 1%;
+  font-size: 150%;
+}
+
+/* WHAT TO EXPECT */
+.column4 {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row4:after {
+  padding: 1.5%;
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.toexpect {
+  width: 80%;
+  height: 80%;
+  transition: 0.3s;
+  /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+}
+.expectitles {
+  /*   margin-top: 7%; */
+  font-size: 250%;
+  color: #8b2455;
+}
+.expectsubtitles {
+  margin: 5%;
+  transform: translate(0, -50%);
+}
+.toexpect:hover {
+  transform: scale(1.05);
+}
+.sponsorssubtitle {
+  font-size: 130%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+.sponsorsimages {
+  height: 50%;
+  width: 90%;
+  transition: 0.3s;
+  /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+}
+
+.sponsorsimages:hover {
+  transform: scale(1.1);
+}
+.sponsors {
+  margin: 2%;
+  padding: 1%;
+}
+
+.expectitles2 {
+  margin-top: 5%;
+  font-size: 300%;
+}
+.expectsubtitles2 {
+}
+
+#allgirls {
+  font-family: "playlistscript";
+  font-size: 230%;
+}
+.taggbox-container {
+  margin-top: 5%;
+}
+#value {
+  font-size: 50px;
+}
+.about {
+  padding: 3%;
+}
+.column5 {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column5 {
+    width: 100%;
+  }
+}
+
+#introgifs {
+  margin-top: 8%;
+  width: 85%;
+  height: 85%;
+}
